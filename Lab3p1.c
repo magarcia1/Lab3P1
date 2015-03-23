@@ -8,6 +8,8 @@
 #include "p24fj64ga002.h"
 #include "lcd.h"
 #include "timer.h"
+#include "adc.h"
+#include "pwm.h"
 #include <stdio.h>
 
 _CONFIG1( JTAGEN_OFF & GCP_OFF & GWRP_OFF & BKBUG_ON & COE_OFF & ICS_PGx1 &
@@ -19,9 +21,35 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define true 1   // define true to use with bool data type.
 #define false 0  // define false for bool data type.
 
+volatile int val;
 
 int main(void) {
 
+    initPWM();
+    initADC();
+
+    while(1){
+       // printStringLCD('0' + val);
+    }
     return 1;
 }
 
+// ******************************************************************************************* //
+
+void _ISR _ADC1Interrupt(void){
+    IFS0bits.AD1IF = 0;
+/*
+    int i = 0;
+    unsigned int *adcPtr;
+    adcVal = 0;
+    adcPtr = (unsigned int *) (&ADC1BUF0);
+
+    for(i = 0; i < 16; i++){
+        adcVal = adcVal + *adcPtr/16;
+        adcPtr++;
+    }
+  */
+    val = ADC1BUF0;
+}
+
+// ******************************************************************************************* //

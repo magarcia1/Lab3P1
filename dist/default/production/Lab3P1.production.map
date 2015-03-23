@@ -60,18 +60,19 @@ Program Memory  [Origin = 0x200, Length = 0xa9fc]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0x9e            0xed  (237)
-.text                        0x29e               0x2a6           0x3f9  (1017)
-.dinit                       0x544                 0x2             0x3  (3)
+.text                        0x29e               0x2be           0x41d  (1053)
+.dinit                       0x55c                 0x8             0xc  (12)
 
-                     Total program memory used (bytes):          0x4e9  (1257) 1%
+                     Total program memory used (bytes):          0x516  (1302) 1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
+.nbss                        0x800                   0             0x2  (2)
 
-                        Total data memory used (bytes):              0  (0) 
+                        Total data memory used (bytes):            0x2  (2) <1%
 
 
 Dynamic Memory Usage
@@ -79,10 +80,18 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x800                              0x2000  (8192)
+stack                        0x802                              0x1ffe  (8190)
 
-                        Maximum dynamic memory (bytes):         0x2000  (8192)
+                        Maximum dynamic memory (bytes):         0x1ffe  (8190)
 
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  _val
+
+External Symbols in Data Memory (by name):
+
+                    0x0800                  _val
 
 External Symbols in Program Memory (by address):
 
@@ -105,9 +114,11 @@ External Symbols in Program Memory (by address):
                   0x0004aa                  _initADC
                   0x000504                  _initPWM
                   0x00053c                  _main
+                  0x000544                  __ADC1Interrupt
 
 External Symbols in Program Memory (by name):
 
+                  0x000544                  __ADC1Interrupt
                   0x00029a                  __DefaultInterrupt
                   0x00023c                  __data_init
                   0x00023c                  __data_init_standard
@@ -200,45 +211,46 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1b9f
+.debug_info       0x000000       0x1d10
  *(.debug_info)
- .debug_info      0x000000        0x14a build/default/production/Lab3p1.o
- .debug_info      0x00014a        0x5e4 build/default/production/lcd.o
- .debug_info      0x00072e        0x658 build/default/production/timer.o
- .debug_info      0x000d86        0x959 build/default/production/adc.o
- .debug_info      0x0016df        0x4c0 build/default/production/pwm.o
+ .debug_info      0x000000        0x2bb build/default/production/Lab3p1.o
+ .debug_info      0x0002bb        0x5e4 build/default/production/lcd.o
+ .debug_info      0x00089f        0x658 build/default/production/timer.o
+ .debug_info      0x000ef7        0x959 build/default/production/adc.o
+ .debug_info      0x001850        0x4c0 build/default/production/pwm.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x431
+.debug_abbrev     0x000000        0x497
  *(.debug_abbrev)
- .debug_abbrev    0x000000         0x72 build/default/production/Lab3p1.o
- .debug_abbrev    0x000072         0xe2 build/default/production/lcd.o
- .debug_abbrev    0x000154        0x12f build/default/production/timer.o
- .debug_abbrev    0x000283         0xf8 build/default/production/adc.o
- .debug_abbrev    0x00037b         0xb6 build/default/production/pwm.o
+ .debug_abbrev    0x000000         0xd8 build/default/production/Lab3p1.o
+ .debug_abbrev    0x0000d8         0xe2 build/default/production/lcd.o
+ .debug_abbrev    0x0001ba        0x12f build/default/production/timer.o
+ .debug_abbrev    0x0002e9         0xf8 build/default/production/adc.o
+ .debug_abbrev    0x0003e1         0xb6 build/default/production/pwm.o
 
-.debug_line       0x000000        0x723
+.debug_line       0x000000        0x74d
  *(.debug_line)
- .debug_line      0x000000         0xb7 build/default/production/Lab3p1.o
- .debug_line      0x0000b7        0x2d2 build/default/production/lcd.o
- .debug_line      0x000389        0x18a build/default/production/timer.o
- .debug_line      0x000513        0x124 build/default/production/adc.o
- .debug_line      0x000637         0xec build/default/production/pwm.o
+ .debug_line      0x000000         0xe1 build/default/production/Lab3p1.o
+ .debug_line      0x0000e1        0x2d2 build/default/production/lcd.o
+ .debug_line      0x0003b3        0x18a build/default/production/timer.o
+ .debug_line      0x00053d        0x124 build/default/production/adc.o
+ .debug_line      0x000661         0xec build/default/production/pwm.o
 
-.debug_frame      0x000000        0x144
+.debug_frame      0x000000        0x154
  *(.debug_frame)
- .debug_frame     0x000000         0x24 build/default/production/Lab3p1.o
- .debug_frame     0x000024         0x94 build/default/production/lcd.o
- .debug_frame     0x0000b8         0x44 build/default/production/timer.o
- .debug_frame     0x0000fc         0x24 build/default/production/adc.o
- .debug_frame     0x000120         0x24 build/default/production/pwm.o
+ .debug_frame     0x000000         0x34 build/default/production/Lab3p1.o
+ .debug_frame     0x000034         0x94 build/default/production/lcd.o
+ .debug_frame     0x0000c8         0x44 build/default/production/timer.o
+ .debug_frame     0x00010c         0x24 build/default/production/adc.o
+ .debug_frame     0x000130         0x24 build/default/production/pwm.o
 
-.debug_str        0x000000         0xb1
+.debug_str        0x000000         0xc3
  *(.debug_str)
- .debug_str       0x000000         0x2a build/default/production/lcd.o
- .debug_str       0x00002a         0x26 build/default/production/timer.o
- .debug_str       0x000050         0x42 build/default/production/adc.o
- .debug_str       0x000092         0x1f build/default/production/pwm.o
+ .debug_str       0x000000         0x12 build/default/production/Lab3p1.o
+ .debug_str       0x000012         0x2a build/default/production/lcd.o
+ .debug_str       0x00003c         0x26 build/default/production/timer.o
+ .debug_str       0x000062         0x42 build/default/production/adc.o
+ .debug_str       0x0000a4         0x1f build/default/production/pwm.o
 
 .debug_loc
  *(.debug_loc)
@@ -247,18 +259,18 @@ __CONFIG1         0x00abfe          0x2
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000        0x142
+                  0x000000        0x15d
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0x35 build/default/production/Lab3p1.o
+                  0x000000         0x50 build/default/production/Lab3p1.o
  .debug_pubnames
-                  0x000035         0x98 build/default/production/lcd.o
+                  0x000050         0x98 build/default/production/lcd.o
  .debug_pubnames
-                  0x0000cd         0x39 build/default/production/timer.o
+                  0x0000e8         0x39 build/default/production/timer.o
  .debug_pubnames
-                  0x000106         0x1e build/default/production/adc.o
+                  0x000121         0x1e build/default/production/adc.o
  .debug_pubnames
-                  0x000124         0x1e build/default/production/pwm.o
+                  0x00013f         0x1e build/default/production/pwm.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -298,7 +310,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000028          0x4 LONG 0x29a DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x29a DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002c          0x4 LONG 0x29a DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002e          0x4 LONG 0x29a DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x544 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000030          0x4 LONG 0x29a DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000032          0x4 LONG 0x29a DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000034          0x4 LONG 0x29a DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -426,7 +438,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000128          0x4 LONG 0x29a DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012a          0x4 LONG 0x29a DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012c          0x4 LONG 0x29a DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00012e          0x4 LONG 0x29a DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00012e          0x4 LONG 0x544 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000130          0x4 LONG 0x29a DEFINED (__AltInterrupt14)?ABSOLUTE (__AltInterrupt14):DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000132          0x4 LONG 0x29a DEFINED (__AltInterrupt15)?ABSOLUTE (__AltInterrupt15):DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000134          0x4 LONG 0x29a DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1117,36 +1129,40 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x000078        0x233
+                  0x000078        0x250
  .debug_pubtypes
-                  0x000078         0x12 build/default/production/Lab3p1.o
+                  0x000078         0x2f build/default/production/Lab3p1.o
  .debug_pubtypes
-                  0x00008a         0x4e build/default/production/lcd.o
+                  0x0000a7         0x4e build/default/production/lcd.o
  .debug_pubtypes
-                  0x0000d8         0x8a build/default/production/timer.o
+                  0x0000f5         0x8a build/default/production/timer.o
  .debug_pubtypes
-                  0x000162         0xd8 build/default/production/adc.o
+                  0x00017f         0xd8 build/default/production/adc.o
  .debug_pubtypes
-                  0x00023a         0x71 build/default/production/pwm.o
+                  0x000257         0x71 build/default/production/pwm.o
 
 __c30_signature
-                  0x0002ab         0x2a
+                  0x0002c8         0x2a
  __c30_signature
-                  0x0002ab          0x6 build/default/production/Lab3p1.o
+                  0x0002c8          0x6 build/default/production/Lab3p1.o
  __c30_signature
-                  0x0002b1          0x6 build/default/production/lcd.o
+                  0x0002ce          0x6 build/default/production/lcd.o
  __c30_signature
-                  0x0002b7          0x6 build/default/production/timer.o
+                  0x0002d4          0x6 build/default/production/timer.o
  __c30_signature
-                  0x0002bd          0x6 build/default/production/adc.o
+                  0x0002da          0x6 build/default/production/adc.o
  __c30_signature
-                  0x0002c3          0x6 build/default/production/pwm.o
+                  0x0002e0          0x6 build/default/production/pwm.o
  __c30_signature
-                  0x0002c9          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                  0x0002e6          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x0002cf          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                  0x0002ec          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
 
-.text             0x00029e        0x2a6
+.nbss               0x0800          0x2
+ .nbss              0x0800          0x2 build/default/production/Lab3p1.o
+                    0x0800                  _val
+
+.text             0x00029e        0x2be
  .text            0x00029e        0x190 build/default/production/lcd.o
                   0x00029e                  _writeFourBits
                   0x0002f4                  _writeLCD
@@ -1164,8 +1180,9 @@ __c30_signature
                   0x0004aa                  _initADC
  .text            0x000504         0x38 build/default/production/pwm.o
                   0x000504                  _initPWM
- .text            0x00053c          0x8 build/default/production/Lab3p1.o
+ .text            0x00053c         0x20 build/default/production/Lab3p1.o
                   0x00053c                  _main
+                  0x000544                  __ADC1Interrupt
 
-.dinit            0x000544          0x2
- .dinit           0x000544          0x2 data_init
+.dinit            0x00055c          0x8
+ .dinit           0x00055c          0x8 data_init
