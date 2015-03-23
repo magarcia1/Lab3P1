@@ -33,8 +33,8 @@ int main(void) {
     clearLCD();
 
     while(1){
-        voltage = 3.3 * ((float) val)/1023;
-        sprintf(v,%.1f,voltage);
+        voltage = 3.285* ((float) val)/1023;
+        sprintf(v,%.3f,voltage);
         printStringLCD(v);
         clearLCD();
     }
