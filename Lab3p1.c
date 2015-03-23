@@ -33,10 +33,16 @@ int main(void) {
     clearLCD();
 
     while(1){
-        voltage = 3.285* ((float) val)/1023;
-        sprintf(v,%.3f,voltage);
-        printStringLCD(v);
         clearLCD();
+        voltage = 3.285* ((float) val)/1023;
+        sprintf(v,"%.3f V",voltage);
+        printStringLCD(v);
+        delayMs(10);
+//        delayMs(1000);
+//        delayMs(1000);
+//        delayMs(1000);
+//        delayMs(1000);
+//        delayMs(1000);
     }
     return 1;
 }
