@@ -38,11 +38,6 @@ int main(void) {
         sprintf(v,"%.3f V",voltage);
         printStringLCD(v);
         delayMs(10);
-//        delayMs(1000);
-//        delayMs(1000);
-//        delayMs(1000);
-//        delayMs(1000);
-//        delayMs(1000);
     }
     return 1;
 }
