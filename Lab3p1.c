@@ -21,8 +21,8 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 
 
 int main(void) {
-    initADC();
-    initPWM();
+    initADC(); // Initialize the ADC.
+    initPWM(); // Initialize the PWM.
     
     while (1){
 
