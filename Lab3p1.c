@@ -21,7 +21,12 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 
 
 int main(void) {
+    initADC();
+    initPWM();
+    
+    while (1){
 
+    }
     return 1;
 }
 
