@@ -27,9 +27,16 @@ int main(void) {
 
     initPWM();
     initADC();
-
+    initLCD();
+    clearLCD();
+    int i = 0;
     while(1){
-       // printStringLCD('0' + val);
+//        clearLCD();
+        for (i = 0; i < 8;i++){
+            printCharLCD('0' + val);
+            delayMs(1000);
+        }
+        clearLCD();
     }
     return 1;
 }
@@ -38,18 +45,64 @@ int main(void) {
 
 void _ISR _ADC1Interrupt(void){
     IFS0bits.AD1IF = 0;
-/*
+
     int i = 0;
     unsigned int *adcPtr;
-    adcVal = 0;
+    val = 0;
     adcPtr = (unsigned int *) (&ADC1BUF0);
 
     for(i = 0; i < 16; i++){
-        adcVal = adcVal + *adcPtr/16;
+        val = val + *adcPtr/16;
         adcPtr++;
     }
-  */
-    val = ADC1BUF0;
+  
+//    val = ADC1BUF0;
 }
 
+//char* toString(float v){
+//    char* result = 0;
+//
+//     // Extract integer part
+//    int ipart = (int)n;
+//
+//    // Extract floating part
+//    float fpart = n - (float)ipart;
+//
+//    // convert integer part to string
+//    int i = intToStr(ipart, res, 0);
+//
+//    // check for display option after point
+//    if (afterpoint != 0)
+//    {
+//        res[i] = '.';  // add dot
+//
+//        // Get the value of fraction part upto given no.
+//        // of points after dot. The third parameter is needed
+//        // to handle cases like 233.007
+//        fpart = fpart * pow(10, afterpoint);
+//
+//        intToStr((int)fpart, res + i + 1, afterpoint);
+//    }
+//
+//    return result;
+//}
+//
+//int intToStr(int x, char str[], int d)
+//{
+//    int i = 0;
+//    while (x)
+//    {
+//        str[i++] = (x%10) + '0';
+//        x = x/10;
+//    }
+//
+//    // If number of digits required is more, then
+//    // add 0s at the beginning
+//    while (i < d)
+//        str[i++] = '0';
+//
+//    reverse(str, i);
+//    str[i] = '\0';
+//    return i;
+//}
 // ******************************************************************************************* //

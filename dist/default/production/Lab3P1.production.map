@@ -1,26 +1,26 @@
-Microchip Technology Inc, vv1.24 (0)
+Microchip Technology Inc, vv1.23 (A)
 
 Tool Name:
-  c:\program files (x86)\microchip\xc16\v1.24\bin\bin\..\bin/elf-ld.exe
+  c:\program files (x86)\microchip\xc16\v1.23\bin\bin\..\bin/elf-ld.exe
 
 Command:
   -p24FJ64GA002 \
   -o \
   dist/default/production/Lab3P1.production.elf \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/.. \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24E \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24H \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24H/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC30F \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC30F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33E \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33F \
-  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/.. \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24E \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24F \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24H \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC30F \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC33E \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC33F \
+  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC33F/gld \
   build/default/production/Lab3p1.o \
   build/default/production/lcd.o \
   build/default/production/timer.o \
@@ -49,10 +49,10 @@ Command:
 
 Archive member included because of file (symbol)
 
-c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                               (__resetPRI)
-c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
-                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o) (__data_init_standard)
+c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o) (__data_init_standard)
 
 
 Program Memory  [Origin = 0x200, Length = 0xa9fc]
@@ -60,10 +60,10 @@ Program Memory  [Origin = 0x200, Length = 0xa9fc]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0x9e            0xed  (237)
-.text                        0x29e               0x2be           0x41d  (1053)
-.dinit                       0x55c                 0x8             0xc  (12)
+.text                        0x29e               0x30e           0x495  (1173)
+.dinit                       0x5ac                 0x8             0xc  (12)
 
-                     Total program memory used (bytes):          0x516  (1302) 1%
+                     Total program memory used (bytes):          0x58e  (1422) 2%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -97,8 +97,8 @@ External Symbols in Program Memory (by address):
 
                   0x000200                  __resetPRI
                   0x00022c                  __psv_init
-                  0x00023c                  __data_init
                   0x00023c                  __data_init_standard
+                  0x00023c                  __data_init
                   0x00029a                  __DefaultInterrupt
                   0x00029e                  _writeFourBits
                   0x0002f4                  _writeLCD
@@ -111,14 +111,14 @@ External Symbols in Program Memory (by address):
                   0x00042e                  _delayUs
                   0x00045e                  _delayMs
                   0x00048e                  _initTimer1
-                  0x0004aa                  _initADC
-                  0x000504                  _initPWM
-                  0x00053c                  _main
-                  0x000544                  __ADC1Interrupt
+                  0x0004aa                  _main
+                  0x0004d8                  __ADC1Interrupt
+                  0x00051c                  _initADC
+                  0x000574                  _initPWM
 
 External Symbols in Program Memory (by name):
 
-                  0x000544                  __ADC1Interrupt
+                  0x0004d8                  __ADC1Interrupt
                   0x00029a                  __DefaultInterrupt
                   0x00023c                  __data_init
                   0x00023c                  __data_init_standard
@@ -128,11 +128,11 @@ External Symbols in Program Memory (by name):
                   0x0003e8                  _clearPrintStringLCD
                   0x00045e                  _delayMs
                   0x00042e                  _delayUs
-                  0x0004aa                  _initADC
+                  0x00051c                  _initADC
                   0x000326                  _initLCD
-                  0x000504                  _initPWM
+                  0x000574                  _initPWM
                   0x00048e                  _initTimer1
-                  0x00053c                  _main
+                  0x0004aa                  _main
                   0x0003b6                  _moveCursorLCD
                   0x000314                  _printCharLCD
                   0x000380                  _printStringLCD
@@ -160,8 +160,8 @@ LOAD build/default/production/timer.o
 LOAD build/default/production/adc.o
 LOAD build/default/production/pwm.o
                     0x0001                  __MPLAB_BUILD = 0x1
-LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libfx-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
                     0xabfe                  __CONFIG1 = 0xabfe
                     0x0001                  __NO_HANDLES = 0x1
@@ -180,11 +180,11 @@ LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libfx-elf.a
 
 .text             0x000200         0x9e
  *(.init)
- .init            0x000200         0x3c c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+ .init            0x000200         0x3c c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
                   0x000200                  __reset
                   0x00022c                  __psv_init
- .init            0x00023c         0x5e c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+ .init            0x00023c         0x5e c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
                   0x00023c                  __data_init_standard
                   0x00023c                  __data_init
  *(.user_init)
@@ -211,30 +211,30 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1d10
+.debug_info       0x000000       0x1d30
  *(.debug_info)
- .debug_info      0x000000        0x2bb build/default/production/Lab3p1.o
- .debug_info      0x0002bb        0x5e4 build/default/production/lcd.o
- .debug_info      0x00089f        0x658 build/default/production/timer.o
- .debug_info      0x000ef7        0x959 build/default/production/adc.o
- .debug_info      0x001850        0x4c0 build/default/production/pwm.o
+ .debug_info      0x000000        0x2ef build/default/production/Lab3p1.o
+ .debug_info      0x0002ef        0x5df build/default/production/lcd.o
+ .debug_info      0x0008ce        0x653 build/default/production/timer.o
+ .debug_info      0x000f21        0x954 build/default/production/adc.o
+ .debug_info      0x001875        0x4bb build/default/production/pwm.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x497
+.debug_abbrev     0x000000        0x4b3
  *(.debug_abbrev)
- .debug_abbrev    0x000000         0xd8 build/default/production/Lab3p1.o
- .debug_abbrev    0x0000d8         0xe2 build/default/production/lcd.o
- .debug_abbrev    0x0001ba        0x12f build/default/production/timer.o
- .debug_abbrev    0x0002e9         0xf8 build/default/production/adc.o
- .debug_abbrev    0x0003e1         0xb6 build/default/production/pwm.o
+ .debug_abbrev    0x000000         0xf4 build/default/production/Lab3p1.o
+ .debug_abbrev    0x0000f4         0xe2 build/default/production/lcd.o
+ .debug_abbrev    0x0001d6        0x12f build/default/production/timer.o
+ .debug_abbrev    0x000305         0xf8 build/default/production/adc.o
+ .debug_abbrev    0x0003fd         0xb6 build/default/production/pwm.o
 
-.debug_line       0x000000        0x74d
+.debug_line       0x000000        0x7bd
  *(.debug_line)
- .debug_line      0x000000         0xe1 build/default/production/Lab3p1.o
- .debug_line      0x0000e1        0x2d2 build/default/production/lcd.o
- .debug_line      0x0003b3        0x18a build/default/production/timer.o
- .debug_line      0x00053d        0x124 build/default/production/adc.o
- .debug_line      0x000661         0xec build/default/production/pwm.o
+ .debug_line      0x000000        0x151 build/default/production/Lab3p1.o
+ .debug_line      0x000151        0x2d2 build/default/production/lcd.o
+ .debug_line      0x000423        0x18a build/default/production/timer.o
+ .debug_line      0x0005ad        0x124 build/default/production/adc.o
+ .debug_line      0x0006d1         0xec build/default/production/pwm.o
 
 .debug_frame      0x000000        0x154
  *(.debug_frame)
@@ -310,7 +310,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000028          0x4 LONG 0x29a DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x29a DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002c          0x4 LONG 0x29a DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002e          0x4 LONG 0x544 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x4d8 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000030          0x4 LONG 0x29a DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000032          0x4 LONG 0x29a DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000034          0x4 LONG 0x29a DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -438,7 +438,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000128          0x4 LONG 0x29a DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012a          0x4 LONG 0x29a DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012c          0x4 LONG 0x29a DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00012e          0x4 LONG 0x544 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00012e          0x4 LONG 0x4d8 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000130          0x4 LONG 0x29a DEFINED (__AltInterrupt14)?ABSOLUTE (__AltInterrupt14):DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000132          0x4 LONG 0x29a DEFINED (__AltInterrupt15)?ABSOLUTE (__AltInterrupt15):DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000134          0x4 LONG 0x29a DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1120,9 +1120,9 @@ __CONFIG1         0x00abfe          0x2
                     0x0230                  UART2 = 0x230
                     0x0230                  _UART2 = 0x230
 START GROUP
-LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libc-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Lab3P1.production.elf elf32-pic30)
 LOAD default_isr
@@ -1154,15 +1154,15 @@ __c30_signature
  __c30_signature
                   0x0002e0          0x6 build/default/production/pwm.o
  __c30_signature
-                  0x0002e6          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                  0x0002e6          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x0002ec          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                  0x0002ec          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
 
 .nbss               0x0800          0x2
  .nbss              0x0800          0x2 build/default/production/Lab3p1.o
                     0x0800                  _val
 
-.text             0x00029e        0x2be
+.text             0x00029e        0x30e
  .text            0x00029e        0x190 build/default/production/lcd.o
                   0x00029e                  _writeFourBits
                   0x0002f4                  _writeLCD
@@ -1176,13 +1176,13 @@ __c30_signature
                   0x00042e                  _delayUs
                   0x00045e                  _delayMs
                   0x00048e                  _initTimer1
- .text            0x0004aa         0x5a build/default/production/adc.o
-                  0x0004aa                  _initADC
- .text            0x000504         0x38 build/default/production/pwm.o
-                  0x000504                  _initPWM
- .text            0x00053c         0x20 build/default/production/Lab3p1.o
-                  0x00053c                  _main
-                  0x000544                  __ADC1Interrupt
+ .text            0x0004aa         0x72 build/default/production/Lab3p1.o
+                  0x0004aa                  _main
+                  0x0004d8                  __ADC1Interrupt
+ .text            0x00051c         0x58 build/default/production/adc.o
+                  0x00051c                  _initADC
+ .text            0x000574         0x38 build/default/production/pwm.o
+                  0x000574                  _initPWM
 
-.dinit            0x00055c          0x8
- .dinit           0x00055c          0x8 data_init
+.dinit            0x0005ac          0x8
+ .dinit           0x0005ac          0x8 data_init
