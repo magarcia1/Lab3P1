@@ -44,7 +44,7 @@ int main(void) {
 
 // ******************************************************************************************* //
 
-void _ISR _ADC1Interrupt(void){
+void _ISR_ADC1Interrupt(void){
     IFS0bits.AD1IF = 0;
 
    
