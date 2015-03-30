@@ -45,9 +45,10 @@ int main(void) {
 
 // ******************************************************************************************* //
 
-void _ISR_ADC1Interrupt(void){
+void _ISR _ADC1Interrupt(void){
     IFS0bits.AD1IF = 0;
 
    
     val = ADC1BUF0;
+    OC1RS = PR2 * ( (float) val/1023);
 }
