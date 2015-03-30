@@ -8,7 +8,8 @@
 #ifndef PWM_H
 #define	PWM_H
 
-void initPWM();
+void initPWMLeft();
+void initPWMRight();
 
 #endif	/* PWM_H */
 

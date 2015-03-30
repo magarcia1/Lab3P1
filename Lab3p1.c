@@ -27,7 +27,8 @@ int main(void) {
 
     char v[10];
     float voltage;
-    initPWM();
+    initPWMLeft();
+    initPWMRight();
     initADC();
     initLCD();
     clearLCD();
