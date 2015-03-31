@@ -22,11 +22,11 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define false 0  // define false for bool data type.
 
 volatile int val;
+volatile double voltage;
 
 int main(void) {
 
     char v[10];
-    float voltage;
     initPWMLeft();
     initPWMRight();
     initADC();
@@ -35,7 +35,7 @@ int main(void) {
 
     while(1){
         clearLCD();
-        voltage = 3.285* ((float) val)/1023;
+        voltage = 3.285* ((double) val)/1023;
         sprintf(v,"%.3f V",voltage);
         printStringLCD(v);
         delayMs(10);
@@ -47,8 +47,6 @@ int main(void) {
 
 void _ISR _ADC1Interrupt(void){
     IFS0bits.AD1IF = 0;
-
-   
     val = ADC1BUF0;
-    OC1RS = PR2 * ( (float) val/1023);
+    OC1RS = (unsigned int) (PR3 * ((double) voltage/3.285));
 }
