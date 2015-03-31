@@ -49,4 +49,5 @@ void _ISR _ADC1Interrupt(void){
     IFS0bits.AD1IF = 0;
     val = ADC1BUF0;
     OC1RS = (unsigned int) (PR3 * ((double) voltage/3.285));
+    OC2RS = (unsigned int) (PR3 * ((double) voltage/3.285));
 }
