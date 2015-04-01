@@ -25,8 +25,8 @@ void initPWMLeft(){
 }
 
 void initPWMRight(){
-    OC1CONbits.OCTSEL = 1; // using timer 3
-    OC1CONbits.OCM = 6;
+    OC2CONbits.OCTSEL = 1; // using timer 3
+    OC2CONbits.OCM = 6;
 
     RPOR1bits.RP3R = 19; //OC2 18 Output Compare 2 on Pin 7
     ODCBbits.ODB5 = 1; //Output Drain Collectore on Pin 14
