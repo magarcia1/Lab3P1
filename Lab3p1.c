@@ -10,6 +10,7 @@
 #include "timer.h"
 #include "adc.h"
 #include "pwm.h"
+#include "initSw1.h"
 #include <stdio.h>
 
 _CONFIG1( JTAGEN_OFF & GCP_OFF & GWRP_OFF & BKBUG_ON & COE_OFF & ICS_PGx1 &
@@ -23,6 +24,15 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 
 volatile int val;
 volatile double voltage;
+volatile stateType CurrState = 0;
+
+typedef enum stateTypeEnum
+{
+    //TODO: Define states by name
+        forward,
+        backward
+} stateType;
+
 
 int main(void) {
 
@@ -39,6 +49,8 @@ int main(void) {
         sprintf(v,"%.3f V",voltage);
         printStringLCD(v);
         delayMs(10);
+
+
     }
     return 1;
 }
@@ -51,6 +63,15 @@ void _ISR _ADC1Interrupt(void){
     OC2RS = (unsigned int) (PR3 * (double) voltage/3.285); //for rigth
     OC1RS = (unsigned int) (PR3 * (double) (1 - voltage/3.285)); //for left
  
+
+
+}
+
+void _ISR _CNInterrupt(void) {
+    IFS1bits.CNIF = 0;
+
+    if ( _RB5 == RELEASED)
+
 
 
 }
