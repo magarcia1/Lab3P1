@@ -82,9 +82,9 @@ void _ISR _ADC1Interrupt(void){
 
 void _ISR _CNInterrupt(void) {
     IFS1bits.CNIF = 0;
-    delayMs(10);
+//    delayMs(10);
 
-    if ( _RB5 == RELEASED){
+    if ( _RB5 == PRESSED ){
         if (currState == forward){
             currState = backward;
         }
