@@ -3,4 +3,5 @@ Lab3p1.c  \
 lcd.h  \
 timer.h  \
 adc.h  \
-pwm.h 
+pwm.h  \
+ initSW1.h 

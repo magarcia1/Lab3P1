@@ -11,6 +11,8 @@
 
 void initPWMLeft();
 void initPWMRight();
+void spinForward();
+void spinBackward();
 
 #endif	/* PWM_H */
 

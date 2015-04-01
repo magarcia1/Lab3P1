@@ -10,7 +10,7 @@
 #include "timer.h"
 #include "adc.h"
 #include "pwm.h"
-#include "initSw1.h"
+#include "initSW1.h"
 #include <stdio.h>
 
 _CONFIG1( JTAGEN_OFF & GCP_OFF & GWRP_OFF & BKBUG_ON & COE_OFF & ICS_PGx1 &
@@ -22,16 +22,19 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define true 1   // define true to use with bool data type.
 #define false 0  // define false for bool data type.
 
-volatile int val;
-volatile double voltage;
-volatile stateType CurrState = 0;
-
 typedef enum stateTypeEnum
 {
     //TODO: Define states by name
         forward,
         backward
 } stateType;
+
+
+volatile int val;
+volatile double voltage;
+volatile stateType currState = forward;
+
+
 
 
 int main(void) {
@@ -41,6 +44,7 @@ int main(void) {
     initPWMRight();
     initADC();
     initLCD();
+    initSW1();
     clearLCD();
 
     while(1){
@@ -49,6 +53,15 @@ int main(void) {
         sprintf(v,"%.3f V",voltage);
         printStringLCD(v);
         delayMs(10);
+
+        switch (currState){
+            case forward:
+                spinForward();
+                break;
+            case backward:
+                spinBackward();
+                break;
+        }
 
 
     }
@@ -69,9 +82,15 @@ void _ISR _ADC1Interrupt(void){
 
 void _ISR _CNInterrupt(void) {
     IFS1bits.CNIF = 0;
+    delayMs(10);
 
-    if ( _RB5 == RELEASED)
-
-
+    if ( _RB5 == RELEASED){
+        if (currState == forward){
+            currState = backward;
+        }
+        else if (currState == backward){
+            currState = forward;
+        }
+    }
 
 }

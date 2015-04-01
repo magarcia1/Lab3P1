@@ -34,3 +34,36 @@ void initPWMRight(){
     OC2R = 0; //very important
     OC2RS = 14;
 }
+
+void spinForward(){
+    /*
+     FOR LEFT
+     */
+    RPOR1bits.RP2R = 0;  //
+    ODCBbits.ODB1 = 0;  //
+    RPOR0bits.RP1R = 18; //
+    ODCBbits.ODB2 = 1; //
+
+    /*
+     FOR RIGHT
+     */
+    RPOR2bits.RP5R = 0;
+    ODCBbits.ODB3 = 0;
+    RPOR1bits.RP3R = 19;
+    ODCBbits.ODB5 = 1;
+
+}
+
+void spinBackward(){
+    RPOR0bits.RP1R = 0; // set forward to 0
+    RPOR1bits.RP2R = 18; // set forward to 0
+    
+    ODCBbits.ODB2 = 0;  //
+    ODCBbits.ODB1 = 1; //
+
+
+    RPOR1bits.RP3R = 0; // PIN 7
+    ODCBbits.ODB5 = 0; // Pin 14
+    RPOR2bits.RP5R = 19; // Pin 14
+    ODCBbits.ODB3 = 1; // Pin 7
+}

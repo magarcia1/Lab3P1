@@ -19,7 +19,7 @@ endif
 endif
 
 # Environment
-MKDIR=mkdir -p
+MKDIR=gnumkdir -p
 RM=rm -f 
 MV=mv 
 CP=cp 
@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Lab3p1.c lcd.c timer.c adc.c pwm.c
+SOURCEFILES_QUOTED_IF_SPACED=Lab3p1.c lcd.c timer.c adc.c pwm.c initSW1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Lab3p1.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pwm.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Lab3p1.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pwm.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Lab3p1.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pwm.o ${OBJECTDIR}/initSW1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Lab3p1.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pwm.o.d ${OBJECTDIR}/initSW1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Lab3p1.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pwm.o
+OBJECTFILES=${OBJECTDIR}/Lab3p1.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pwm.o ${OBJECTDIR}/initSW1.o
 
 # Source Files
-SOURCEFILES=Lab3p1.c lcd.c timer.c adc.c pwm.c
+SOURCEFILES=Lab3p1.c lcd.c timer.c adc.c pwm.c initSW1.c
 
 
 CFLAGS=
@@ -117,6 +117,13 @@ ${OBJECTDIR}/pwm.o: pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  pwm.c  -o ${OBJECTDIR}/pwm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/pwm.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/pwm.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+${OBJECTDIR}/initSW1.o: initSW1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/initSW1.o.d 
+	@${RM} ${OBJECTDIR}/initSW1.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  initSW1.c  -o ${OBJECTDIR}/initSW1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initSW1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/initSW1.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
 else
 ${OBJECTDIR}/Lab3p1.o: Lab3p1.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -153,6 +160,13 @@ ${OBJECTDIR}/pwm.o: pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  pwm.c  -o ${OBJECTDIR}/pwm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/pwm.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/pwm.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+${OBJECTDIR}/initSW1.o: initSW1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/initSW1.o.d 
+	@${RM} ${OBJECTDIR}/initSW1.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  initSW1.c  -o ${OBJECTDIR}/initSW1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/initSW1.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/initSW1.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -178,7 +192,7 @@ else
 dist/${CND_CONF}/${IMAGE_TYPE}/Lab3P1.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_CC} $(MP_EXTRA_LD_PRE)  -o dist/${CND_CONF}/${IMAGE_TYPE}/Lab3P1.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -omf=elf -Wl,,--defsym=__MPLAB_BUILD=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem$(MP_EXTRA_LD_POST) 
-	${MP_CC_DIR}/xc16-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/Lab3P1.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -a  -omf=elf  
+	${MP_CC_DIR}\\xc16-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/Lab3P1.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -a  -omf=elf  
 	
 endif
 
@@ -198,7 +212,7 @@ endif
 # Enable dependency checking
 .dep.inc: .depcheck-impl
 
-DEPFILES=$(shell "${PATH_TO_IDE_BIN}"mplabwildcard ${POSSIBLE_DEPFILES})
+DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
 ifneq (${DEPFILES},)
 include ${DEPFILES}
 endif
