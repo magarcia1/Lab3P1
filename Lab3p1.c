@@ -5,7 +5,7 @@
  * Created on March 23, 2015, 11:36 AM
  */
 
-#include "p24fj64ga002.h"
+#include "p24FJ64GA002.h"
 #include "lcd.h"
 #include "timer.h"
 #include "adc.h"
