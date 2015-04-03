@@ -1,6 +1,6 @@
 /* 
  * File:   Lab3p1.c
- * Author: MiguelAnguel
+ * Author: MiguelAngel
  *
  * Created on March 23, 2015, 11:36 AM
  */
@@ -52,7 +52,7 @@ int main(void) {
         voltage = 3.285* ((double) val)/1023;
         sprintf(v,"%.3f V",voltage);
         printStringLCD(v);
-        delayMs(10);
+        delayMs(17); // 60 fps
 
         switch (currState){
             case forward:

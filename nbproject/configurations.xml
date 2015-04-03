@@ -9,6 +9,7 @@
       <itemPath>adc.h</itemPath>
       <itemPath>pwm.h</itemPath>
       <itemPath>/opt/microchip/xc16/v1.24/support/PIC24F/h/p24FJ64GA002.h</itemPath>
+      <itemPath>initSW1.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -22,6 +23,7 @@
       <itemPath>timer.c</itemPath>
       <itemPath>adc.c</itemPath>
       <itemPath>pwm.c</itemPath>
+      <itemPath>initSW1.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

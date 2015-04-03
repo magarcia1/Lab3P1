@@ -1,32 +1,32 @@
 Microchip Technology Inc, vv1.24 (0)
 
 Tool Name:
-  /Applications/microchip/xc16/v1.24/bin/bin/../bin/elf-ld
+  /opt/microchip/xc16/v1.24/bin/bin/../bin/elf-ld
 
 Command:
   -p24FJ64GA002 \
   -o \
   dist/default/production/Lab3P1.production.elf \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/.. \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/PIC24E \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/PIC24E/gld \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/PIC24F/gld \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/PIC24H \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/PIC24H/gld \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC30F \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/dsPIC30F/gld \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33E \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33E/gld \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33F \
-  -L/Applications/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33F/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/.. \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/PIC24E \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/PIC24E/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/PIC24F/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/PIC24H \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/PIC24H/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC30F \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/dsPIC30F/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33E \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33E/gld \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33F \
+  -L/opt/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33F/gld \
   build/default/production/Lab3p1.o \
   build/default/production/lcd.o \
   build/default/production/timer.o \
   build/default/production/adc.o \
   build/default/production/pwm.o \
-  build/default/production/_ext/1912022193/initSW.o \
+  build/default/production/initSW1.o \
   --defsym=__MPLAB_BUILD=1 \
   -Tp24FJ64GA002.gld.00 \
   --stack=16 \
@@ -50,98 +50,98 @@ Command:
 
 Archive member included because of file (symbol)
 
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
                               (__resetPRI)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o) (__data_init_standard)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o) (__data_init_standard)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
                               build/default/production/Lab3p1.o (___subsf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
                               build/default/production/Lab3p1.o (___divsf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
                               build/default/production/Lab3p1.o (___lesf2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
                               build/default/production/Lab3p1.o (___fixunssfsi)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
                               build/default/production/Lab3p1.o (___floatsisf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
                               build/default/production/Lab3p1.o (___floatunsisf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fpack)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo) (__funpack)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__funpack2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fPropagateNaN)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fpack)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo) (__funpack)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__funpack2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fPropagateNaN)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
                               build/default/production/Lab3p1.o (___mulsf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo) (__fcompare)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo) (___floatdisf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo) (___floatundisf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo) (__fcompare)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo) (___floatdisf)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo) (___floatundisf)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
                               build/default/production/Lab3p1.o (__sprintf_fF)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo) (__vfprintf_fF)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (_fputc)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (__powers_)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (__outdone)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (__flsbuf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (_write)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo) (___C30_UART)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___adddf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___ltdf2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___gedf2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___divdf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___nedf2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo) (__dpack)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo) (__dunpack2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___extendsfdf2)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___fixunsdfdi)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___floatundidf)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (_frexpl)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___muldf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___subdf3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___udivsi3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___mulsi3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___udivdi3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___muldi3)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo) (__dcompare)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo) (__dPropagateNaN)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo) (__dtype)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo) (__dunpack)
-/Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
-                              /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo) (___umuldi3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo) (__vfprintf_fF)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (_fputc)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (__powers_)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (__outdone)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (__flsbuf)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo) (_write)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo) (___C30_UART)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___adddf3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___ltdf2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___gedf2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___divdf3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___nedf2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo) (__dpack)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo) (__dunpack2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___extendsfdf2)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___fixunsdfdi)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___floatundidf)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (_frexpl)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___muldf3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___subdf3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___udivsi3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___mulsi3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___udivdi3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo) (___muldi3)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo) (__dcompare)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo) (__dPropagateNaN)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo) (__dtype)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo) (__dunpack)
+/opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
+                              /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo) (___umuldi3)
 
 
 Program Memory  [Origin = 0x200, Length = 0xa9fc]
@@ -217,15 +217,15 @@ External Symbols in Program Memory (by address):
 
                   0x000200                  __resetPRI
                   0x00022c                  __psv_init
-                  0x00023c                  __data_init_standard
                   0x00023c                  __data_init
+                  0x00023c                  __data_init_standard
                   0x00029a                  __DefaultInterrupt
                   0x0002fe                  ___subsf3
                   0x000300                  ___addsf3
                   0x0003ba                  ___divsf3
+                  0x00043e                  ___lesf2
                   0x00043e                  ___eqsf2
                   0x00043e                  ___ltsf2
-                  0x00043e                  ___lesf2
                   0x000442                  ___fixunssfsi
                   0x000478                  ___floatsisf
                   0x00047e                  ___floatunsisf
@@ -256,8 +256,8 @@ External Symbols in Program Memory (by address):
                   0x001592                  ___extendsfdf2
                   0x0015d0                  ___fixunsdfdi
                   0x001632                  ___floatundidf
-                  0x001688                  _frexp
                   0x001688                  _frexpl
+                  0x001688                  _frexp
                   0x0016c2                  ___muldf3
                   0x0017ac                  ___subdf3
                   0x0017b0                  ___udivsi3
@@ -399,10 +399,10 @@ LOAD build/default/production/lcd.o
 LOAD build/default/production/timer.o
 LOAD build/default/production/adc.o
 LOAD build/default/production/pwm.o
-LOAD build/default/production/_ext/1912022193/initSW.o
+LOAD build/default/production/initSW1.o
                     0x0001                  __MPLAB_BUILD = 0x1
-LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F/libpPIC24Fxxx-elf.a
-LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libfx-elf.a
+LOAD /opt/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F/libpPIC24Fxxx-elf.a
+LOAD /opt/microchip/xc16/v1.24/bin/bin/../../lib/libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
                     0xabfe                  __CONFIG1 = 0xabfe
                     0x0001                  __NO_HANDLES = 0x1
@@ -421,11 +421,11 @@ LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libfx-elf.a
 
 .text             0x000200       0x197a
  *(.init)
- .init            0x000200         0x3c /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
+ .init            0x000200         0x3c /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
                   0x000200                  __reset
                   0x000200                  __resetPRI
                   0x00022c                  __psv_init
- .init            0x00023c         0x5e /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
+ .init            0x00023c         0x5e /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
                   0x00023c                  __data_init
                   0x00023c                  __data_init_standard
  *(.user_init)
@@ -434,144 +434,144 @@ LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libfx-elf.a
  .isr             0x00029a          0x4 default_isr
                   0x00029a                  __DefaultInterrupt
  *(.libc)
- .libc            0x00029e         0x60 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
+ .libc            0x00029e         0x60 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
                   0x00029e                  _write
  *(.libm)
  *(.libdsp)
  *(.lib*)
- .libm.subsf3     0x0002fe         0xbc /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+ .libm.subsf3     0x0002fe         0xbc /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
                   0x0002fe                  ___subsf3
                   0x000300                  ___addsf3
- .libm.divfs3     0x0003ba         0x84 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
+ .libm.divfs3     0x0003ba         0x84 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
                   0x0003ba                  ___divsf3
- .libm.eqsf2      0x00043e          0x4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+ .libm.eqsf2      0x00043e          0x4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
                   0x00043e                  ___lesf2
                   0x00043e                  ___eqsf2
                   0x00043e                  ___ltsf2
  .libm.fixunssfsi
-                  0x000442         0x36 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
+                  0x000442         0x36 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
                   0x000442                  ___fixunssfsi
  .libm.floatsisf
-                  0x000478          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
+                  0x000478          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
                   0x000478                  ___floatsisf
  .libm.floatunsisf
-                  0x00047e          0x4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
+                  0x00047e          0x4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
                   0x00047e                  ___floatunsisf
- .libm.fpack      0x000482         0x4c /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
+ .libm.fpack      0x000482         0x4c /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
                   0x000482                  __fpack
- .libm.funpack    0x0004ce         0x2a /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
+ .libm.funpack    0x0004ce         0x2a /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
                   0x0004ce                  __funpack
  .libm.funpack2
-                  0x0004f8         0x10 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                  0x0004f8         0x10 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
                   0x0004f8                  __funpack2
  .libm.fPropagateNaN
-                  0x000508         0x12 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x000508         0x12 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
                   0x000508                  __fPropagateNaN
  .libm.fbobExit
-                  0x00051a          0x8 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x00051a          0x8 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
                   0x00051a                  __fbopExit
  .libm.fbopReturnNaN
-                  0x000522          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x000522          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
                   0x000522                  __fbopReturnNaN
- .libm.mulsf3     0x000528         0x68 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+ .libm.mulsf3     0x000528         0x68 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
                   0x000528                  ___mulsf3
  .libm.fcompare
-                  0x000590         0x36 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                  0x000590         0x36 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
                   0x000590                  __fcompare
  .libm.floatdisf
-                  0x0005c6         0x20 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
+                  0x0005c6         0x20 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
                   0x0005c6                  ___floatdisf
  .libm.floatundisf
-                  0x0005e6         0x5e /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
+                  0x0005e6         0x5e /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
                   0x0005e6                  ___floatundisf
  .libc._sprintf_fF
-                  0x000644         0x2c /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
+                  0x000644         0x2c /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
                   0x000644                  __sprintf_fF
- .libc.fround     0x000670         0xba /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
- .libc.scale      0x00072a         0xc0 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+ .libc.fround     0x000670         0xba /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+ .libc.scale      0x00072a         0xc0 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
  .libc._vfprintf_fF
-                  0x0007ea        0xa42 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+                  0x0007ea        0xa42 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
                   0x0007ea                  __vfprintf_fF
- .libc.fputc      0x00122c         0x88 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
+ .libc.fputc      0x00122c         0x88 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
                   0x00122c                  _fputc
- .libc._flsbuf    0x0012b4         0x84 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
+ .libc._flsbuf    0x0012b4         0x84 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
                   0x0012b4                  __flsbuf
- .libc.dowrite    0x001338          0x4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
- .libm.adddf3     0x00133c         0xfa /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
+ .libc.dowrite    0x001338          0x4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
+ .libm.adddf3     0x00133c         0xfa /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
                   0x00133c                  ___adddf3
- .libm.eqdf2      0x001436          0xa /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
+ .libm.eqdf2      0x001436          0xa /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
                   0x001436                  ___ledf2
                   0x001436                  ___eqdf2
                   0x001436                  ___ltdf2
- .libm.gtdf2      0x001440          0xa /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
+ .libm.gtdf2      0x001440          0xa /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
                   0x001440                  ___gedf2
                   0x001440                  ___gtdf2
- .libm.divdf3     0x00144a         0xb4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
+ .libm.divdf3     0x00144a         0xb4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
                   0x00144a                  ___divdf3
- .libm.nedf2      0x0014fe          0xa /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
+ .libm.nedf2      0x0014fe          0xa /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
                   0x0014fe                  ___nedf2
- .libm.dpack      0x001508         0x58 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
+ .libm.dpack      0x001508         0x58 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
                   0x001508                  __dpack
  .libm.dunpack2
-                  0x001560         0x32 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
+                  0x001560         0x32 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
                   0x001560                  __dunpack2
                   0x001582                  __dreturnNaN
                   0x001588                  __dunpack2exit
  .libm.extendsfdf2
-                  0x001592         0x3e /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
+                  0x001592         0x3e /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
                   0x001592                  ___extendsfdf2
  .libm.fixunsdfdi
-                  0x0015d0         0x62 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
+                  0x0015d0         0x62 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
                   0x0015d0                  ___fixunsdfdi
  .libm.floatundidf
-                  0x001632         0x56 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
+                  0x001632         0x56 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
                   0x001632                  ___floatundidf
- .libm.frexp      0x001688         0x3a /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
+ .libm.frexp      0x001688         0x3a /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
                   0x001688                  _frexpl
                   0x001688                  _frexp
- .libm.muldf3     0x0016c2         0xea /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
+ .libm.muldf3     0x0016c2         0xea /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
                   0x0016c2                  ___muldf3
- .libm.subdf3     0x0017ac          0x4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
+ .libm.subdf3     0x0017ac          0x4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
                   0x0017ac                  ___subdf3
- .libm.udivsi3    0x0017b0         0x20 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+ .libm.udivsi3    0x0017b0         0x20 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
                   0x0017b0                  ___udivsi3
- .libm.mulsi3     0x0017d0          0xc /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+ .libm.mulsi3     0x0017d0          0xc /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
                   0x0017d0                  ___mulp32eds3
                   0x0017d0                  ___mulp32peds3
                   0x0017d0                  ___mulsi3
  .libm.__PplusBdi
-                  0x0017dc         0x28 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x0017dc         0x28 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
  .libm.__PminusBdi
-                  0x001804         0x4a /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x001804         0x4a /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
  .libm.__udivmoddi3
-                  0x00184e         0xe4 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x00184e         0xe4 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
                   0x00184e                  ___udivmoddi3
  .libm.__udivdi3
-                  0x001932          0xe /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x001932          0xe /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
                   0x001932                  ___udivdi3
  .libm.__umoddi3
-                  0x001940          0x8 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x001940          0x8 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
                   0x001940                  ___umoddi3
  .libm.__divdi3
-                  0x001948         0x60 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x001948         0x60 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
                   0x001948                  ___divdi3
  .libm.__moddi3
-                  0x0019a8         0x5c /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x0019a8         0x5c /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
                   0x0019a8                  ___moddi3
  .libm.__muldi3
-                  0x001a04         0x52 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
+                  0x001a04         0x52 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
                   0x001a04                  ___muldi3
  .libm.dcompare
-                  0x001a56         0x52 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
+                  0x001a56         0x52 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
                   0x001a56                  __dcompare
  .libm.dPropagateNaN
-                  0x001aa8         0x1c /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
+                  0x001aa8         0x1c /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
                   0x001aa8                  __dPropagateNaN
- .libm.dtype      0x001ac4         0x24 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
+ .libm.dtype      0x001ac4         0x24 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
                   0x001ac4                  __dtype
- .libm.dunpack    0x001ae8         0x4e /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
+ .libm.dunpack    0x001ae8         0x4e /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
                   0x001ae8                  __dunpack
- .libm.umuldi3    0x001b36         0x44 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
+ .libm.umuldi3    0x001b36         0x44 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
                   0x001b36                  ___umuldi3
 
 usercode
@@ -588,33 +588,33 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x2caa
+.debug_info       0x000000       0x2c33
  *(.debug_info)
- .debug_info      0x000000        0x692 build/default/production/Lab3p1.o
- .debug_info      0x000692        0x5eb build/default/production/lcd.o
- .debug_info      0x000c7d        0x65f build/default/production/timer.o
- .debug_info      0x0012dc        0x960 build/default/production/adc.o
- .debug_info      0x001c3c        0xa8e build/default/production/pwm.o
- .debug_info      0x0026ca        0x5e0 build/default/production/_ext/1912022193/initSW.o
+ .debug_info      0x000000        0x686 build/default/production/Lab3p1.o
+ .debug_info      0x000686        0x5df build/default/production/lcd.o
+ .debug_info      0x000c65        0x653 build/default/production/timer.o
+ .debug_info      0x0012b8        0x954 build/default/production/adc.o
+ .debug_info      0x001c0c        0xa82 build/default/production/pwm.o
+ .debug_info      0x00268e        0x5a5 build/default/production/initSW1.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x5e0
+.debug_abbrev     0x000000        0x5e2
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x166 build/default/production/Lab3p1.o
  .debug_abbrev    0x000166         0xe2 build/default/production/lcd.o
  .debug_abbrev    0x000248        0x12f build/default/production/timer.o
  .debug_abbrev    0x000377         0xf8 build/default/production/adc.o
  .debug_abbrev    0x00046f         0xb6 build/default/production/pwm.o
- .debug_abbrev    0x000525         0xbb build/default/production/_ext/1912022193/initSW.o
+ .debug_abbrev    0x000525         0xbd build/default/production/initSW1.o
 
-.debug_line       0x000000        0xa01
+.debug_line       0x000000        0x999
  *(.debug_line)
- .debug_line      0x000000        0x1c2 build/default/production/Lab3p1.o
- .debug_line      0x0001c2        0x2c9 build/default/production/lcd.o
- .debug_line      0x00048b        0x181 build/default/production/timer.o
- .debug_line      0x00060c        0x11b build/default/production/adc.o
- .debug_line      0x000727        0x1e9 build/default/production/pwm.o
- .debug_line      0x000910         0xf1 build/default/production/_ext/1912022193/initSW.o
+ .debug_line      0x000000        0x1b9 build/default/production/Lab3p1.o
+ .debug_line      0x0001b9        0x2c0 build/default/production/lcd.o
+ .debug_line      0x000479        0x178 build/default/production/timer.o
+ .debug_line      0x0005f1        0x112 build/default/production/adc.o
+ .debug_line      0x000703        0x1e0 build/default/production/pwm.o
+ .debug_line      0x0008e3         0xb6 build/default/production/initSW1.o
 
 .debug_frame      0x000000        0x1dc
  *(.debug_frame)
@@ -623,7 +623,7 @@ __CONFIG1         0x00abfe          0x2
  .debug_frame     0x0000fc         0x44 build/default/production/timer.o
  .debug_frame     0x000140         0x24 build/default/production/adc.o
  .debug_frame     0x000164         0x54 build/default/production/pwm.o
- .debug_frame     0x0001b8         0x24 build/default/production/_ext/1912022193/initSW.o
+ .debug_frame     0x0001b8         0x24 build/default/production/initSW1.o
 
 .debug_str        0x000000        0x12e
  *(.debug_str)
@@ -632,7 +632,7 @@ __CONFIG1         0x00abfe          0x2
  .debug_str       0x000059         0x26 build/default/production/timer.o
  .debug_str       0x00007f         0x42 build/default/production/adc.o
  .debug_str       0x0000c1         0x47 build/default/production/pwm.o
- .debug_str       0x000108         0x26 build/default/production/_ext/1912022193/initSW.o
+ .debug_str       0x000108         0x26 build/default/production/initSW1.o
 
 .debug_loc
  *(.debug_loc)
@@ -654,7 +654,7 @@ __CONFIG1         0x00abfe          0x2
  .debug_pubnames
                   0x00016a         0x54 build/default/production/pwm.o
  .debug_pubnames
-                  0x0001be         0x1e build/default/production/_ext/1912022193/initSW.o
+                  0x0001be         0x1e build/default/production/initSW1.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -672,7 +672,7 @@ __CONFIG1         0x00abfe          0x2
  .debug_aranges
                   0x000060         0x18 build/default/production/pwm.o
  .debug_aranges
-                  0x000078         0x18 build/default/production/_ext/1912022193/initSW.o
+                  0x000078         0x18 build/default/production/initSW1.o
 
 .ivt              0x000004         0xfc
                   0x000004          0x4 LONG 0x29a DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
@@ -1506,9 +1506,9 @@ __CONFIG1         0x00abfe          0x2
                     0x0230                  UART2 = 0x230
                     0x0230                  _UART2 = 0x230
 START GROUP
-LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a
-LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a
-LOAD /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a
+LOAD /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a
+LOAD /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a
+LOAD /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Lab3P1.production.elf elf32-pic30)
 LOAD default_isr
@@ -1527,7 +1527,7 @@ LOAD data_init
  .debug_pubtypes
                   0x0002cb         0xed build/default/production/pwm.o
  .debug_pubtypes
-                  0x0003b8         0x8a build/default/production/_ext/1912022193/initSW.o
+                  0x0003b8         0x8a build/default/production/initSW1.o
 
 __c30_signature
                   0x000442        0x138
@@ -1542,99 +1542,99 @@ __c30_signature
  __c30_signature
                   0x00045a          0x6 build/default/production/pwm.o
  __c30_signature
-                  0x000460          0x6 build/default/production/_ext/1912022193/initSW.o
+                  0x000460          0x6 build/default/production/initSW1.o
  __c30_signature
-                  0x000466          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
+                  0x000466          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x00046c          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
+                  0x00046c          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x000472          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+                  0x000472          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(addsf3.eo)
  __c30_signature
-                  0x000478          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
+                  0x000478          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divsf3.eo)
  __c30_signature
-                  0x00047e          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+                  0x00047e          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(feqltle.eo)
  __c30_signature
-                  0x000484          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
+                  0x000484          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
  __c30_signature
-                  0x00048a          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
+                  0x00048a          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
  __c30_signature
-                  0x000490          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
+                  0x000490          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
  __c30_signature
-                  0x000496          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
+                  0x000496          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fpack.eo)
  __c30_signature
-                  0x00049c          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
+                  0x00049c          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack.eo)
  __c30_signature
-                  0x0004a2          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                  0x0004a2          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(funpack2.eo)
  __c30_signature
-                  0x0004a8          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x0004a8          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(futil.eo)
  __c30_signature
-                  0x0004ae          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+                  0x0004ae          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
  __c30_signature
-                  0x0004b4          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                  0x0004b4          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fcompare.eo)
  __c30_signature
-                  0x0004ba          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
+                  0x0004ba          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
  __c30_signature
-                  0x0004c0          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
+                  0x0004c0          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
  __c30_signature
-                  0x0004c6          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
+                  0x0004c6          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
  __c30_signature
-                  0x0004cc          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+                  0x0004cc          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
  __c30_signature
-                  0x0004d2          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
+                  0x0004d2          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(fputc.eo)
  __c30_signature
-                  0x0004d8          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
+                  0x0004d8          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
  __c30_signature
-                  0x0004de          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+                  0x0004de          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
  __c30_signature
-                  0x0004e4          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
+                  0x0004e4          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
  __c30_signature
-                  0x0004ea          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
+                  0x0004ea          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(write.eo)
  __c30_signature
-                  0x0004f0          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
+                  0x0004f0          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
  __c30_signature
-                  0x0004f6          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
+                  0x0004f6          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(adddf3.eo)
  __c30_signature
-                  0x0004fc          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
+                  0x0004fc          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(deqltle.eo)
  __c30_signature
-                  0x000502          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
+                  0x000502          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dgtge.eo)
  __c30_signature
-                  0x000508          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
+                  0x000508          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divdf3.eo)
  __c30_signature
-                  0x00050e          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
+                  0x00050e          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dne.eo)
  __c30_signature
-                  0x000514          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
+                  0x000514          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpack.eo)
  __c30_signature
-                  0x00051a          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
+                  0x00051a          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
  __c30_signature
-                  0x000520          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
+                  0x000520          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
  __c30_signature
-                  0x000526          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
+                  0x000526          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
  __c30_signature
-                  0x00052c          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
+                  0x00052c          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
  __c30_signature
-                  0x000532          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
+                  0x000532          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(frexp.eo)
  __c30_signature
-                  0x000538          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
+                  0x000538          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldf3.eo)
  __c30_signature
-                  0x00053e          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
+                  0x00053e          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(subdf3.eo)
  __c30_signature
-                  0x000544          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+                  0x000544          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
  __c30_signature
-                  0x00054a          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+                  0x00054a          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
  __c30_signature
-                  0x000550          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x000550          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
  __c30_signature
-                  0x000556          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
+                  0x000556          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(muldi3.eo)
  __c30_signature
-                  0x00055c          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
+                  0x00055c          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dcompare.eo)
  __c30_signature
-                  0x000562          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
+                  0x000562          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
  __c30_signature
-                  0x000568          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
+                  0x000568          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dtype.eo)
  __c30_signature
-                  0x00056e          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
+                  0x00056e          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(dunpack.eo)
  __c30_signature
-                  0x000574          0x6 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
+                  0x000574          0x6 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
 
 .nbss               0x0800          0x8
  .nbss              0x0800          0x8 build/default/production/Lab3p1.o
@@ -1644,45 +1644,45 @@ __c30_signature
 
 .data._powers_      0x0808         0xb0
  .data._powers_
-                    0x0808         0xb0 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
+                    0x0808         0xb0 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
                     0x0808                  __powers_
 
 .data._npowers_
                     0x08b8         0xb0
  .data._npowers_
-                    0x08b8         0xb0 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
+                    0x08b8         0xb0 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(powers.eo)
                     0x08b8                  __npowers_
 
 .data.dpowers       0x0968         0xa0
- .data.dpowers      0x0968         0xa0 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+ .data.dpowers      0x0968         0xa0 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
 
 .data._iob          0x0a08         0x24
- .data._iob         0x0a08         0x24 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+ .data._iob         0x0a08         0x24 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
                     0x0a08                  __iob
 
 .data               0x0a2c         0x18
- .data              0x0a2c         0x18 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+ .data              0x0a2c         0x18 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
 
 .data._Files        0x0a44          0x2
- .data._Files       0x0a44          0x2 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+ .data._Files       0x0a44          0x2 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
                     0x0a44                  __Files
 
 .bss._outdone       0x0a46          0x2
- .bss._outdone      0x0a46          0x2 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+ .bss._outdone      0x0a46          0x2 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
                     0x0a46                  __outdone
 
 .bss._sibuf         0x0a48          0x2
- .bss._sibuf        0x0a48          0x2 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+ .bss._sibuf        0x0a48          0x2 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
                     0x0a48                  __sibuf
 
 .bss._sobuf         0x0a4a          0x2
- .bss._sobuf        0x0a4a          0x2 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
+ .bss._sobuf        0x0a4a          0x2 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libc-elf.a(_iob.eo)
                     0x0a4a                  __sobuf
 
 .data.__C30_UART
                     0x0a4c          0x2
  .data.__C30_UART
-                    0x0a4c          0x2 /Applications/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
+                    0x0a4c          0x2 /opt/microchip/xc16/v1.24/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
                     0x0a4c                  ___C30_UART
 
 .const              0x9b7a          0x8 load address 0x001b7a  
@@ -1716,5 +1716,5 @@ __c30_signature
                   0x00215a                  _initTimer1
  .text            0x002176         0x5a build/default/production/adc.o
                   0x002176                  _initADC
- .text            0x0021d0          0xe build/default/production/_ext/1912022193/initSW.o
+ .text            0x0021d0          0xe build/default/production/initSW1.o
                   0x0021d0                  _initSW1
